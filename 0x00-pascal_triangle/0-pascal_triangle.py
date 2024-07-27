@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """pascal triangle"""
 
+
 def pascal_triangle(n):
     """builds the pascal triangle"""
     if type(n) is not int:
@@ -12,11 +13,11 @@ def pascal_triangle(n):
         if i == 0:
             queue.append([1])
         if i == 1:
-            queue.append([1, 1]) 
+            queue.append([1, 1])
         if i > 1:
             prv_list_len = len(queue[i - 1])
             in_list = [queue[i - 1][j] + queue[i - 1][j + 1]
-                        for j in range(prv_list_len - 1)]
+                       for j in range(prv_list_len - 1)]
             in_list.insert(0, 1)
             in_list.append(1)
             queue.append(in_list)
