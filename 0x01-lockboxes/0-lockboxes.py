@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """check if all boxes
 can be opened"""
 from collections import deque
